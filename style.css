@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#141e30,#243b55);
+    min-height:100vh;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+    width:100%;
+    padding:20px;
+    background:rgba(0,0,0,0.35);
+
+    /* Safari support */
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+
+    text-align:center;
+    color:white;
+    box-shadow:0 2px 10px rgba(0,0,0,0.4);
+}
+
+.navbar h1{
+    font-size:32px;
+    letter-spacing:2px;
+    font-weight:700;
+}
+
+/* ================= MAIN CONTAINER ================= */
+
+.container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:85vh;
+}
+
+/* ================= QUOTE BOX ================= */
+
+.quote-box{
+    width:700px;
+    max-width:90%;
+
+    background:rgba(255,255,255,0.12);
+
+    /* Safari support */
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+
+    padding:50px;
+    border-radius:20px;
+
+    text-align:center;
+    color:white;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.4);
+
+    transition:0.3s ease;
+}
+
+.quote-box:hover{
+    transform:translateY(-5px);
+}
+
+/* ================= TEXT ================= */
+
+.quote-box h2{
+    margin-bottom:25px;
+    font-size:26px;
+    color:#ffffff;
+}
+
+#quote{
+    font-size:28px;
+    line-height:1.6;
+    margin-bottom:20px;
+    font-weight:500;
+}
+
+#author{
+    color:#ffda79;
+    margin-bottom:30px;
+    font-size:18px;
+}
+
+/* ================= BUTTON ================= */
+
+button{
+    padding:15px 35px;
+    border:none;
+    border-radius:50px;
+    cursor:pointer;
+    font-size:18px;
+
+    background:linear-gradient(45deg,#ff9f43,#ff6b6b);
+    color:white;
+
+    transition:0.3s ease;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+button:hover{
+    transform:scale(1.08);
+    box-shadow:0 8px 20px rgba(0,0,0,0.5);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width:600px){
+
+    .quote-box{
+        padding:30px;
+    }
+
+    #quote{
+        font-size:22px;
+    }
+
+    .navbar h1{
+        font-size:24px;
+    }
+
+    button{
+        width:100%;
+    }
+}
